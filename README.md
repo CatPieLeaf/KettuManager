@@ -9,15 +9,11 @@
   ---
 
   <br>
-
-  ![Debug build status](https://img.shields.io/github/actions/workflow/status/C0C0B01/PupuManager/build-debug.yml?label=Debug%20Build&logo=github&style=for-the-badge&branch=main)
-  [![Stars](https://img.shields.io/github/stars/C0C0B01/PupuManager?logo=github&style=for-the-badge)](https://github.com/C0C0B01/PupuManager/stargazers)
-  
-  <br>
   
   ![Downloads (latest)](https://img.shields.io/github/downloads/C0C0B01/PupuManager/latest/total?style=for-the-badge&logo=github&label=Downloads%20(Latest)&color=blue)
   ![Total downloads](https://img.shields.io/github/downloads/C0C0B01/PupuManager/total?style=for-the-badge&logo=github&label=Downloads%20(Total)&color=blue)
   ![GitHub top language](https://img.shields.io/github/languages/top/C0C0B01/PupuManager?style=for-the-badge)
+    [![Stars](https://img.shields.io/github/stars/C0C0B01/PupuManager?logo=github&style=for-the-badge)](https://github.com/C0C0B01/PupuManager/stargazers)
 
   <br>
   
