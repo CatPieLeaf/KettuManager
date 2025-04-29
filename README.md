@@ -1,6 +1,4 @@
 <div align="center">
-
-  <img src="Images/pupu_logo.png" alt="Pupu logo" width="200px" style="border-radius: 50%" />
   
   # Pupu Manager
 
