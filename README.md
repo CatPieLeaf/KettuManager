@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="images/bunny_logo.png" alt="Bunny logo" width="200px" style="border-radius: 50%" />
+  <img src="images/pupu_logo.png" alt="Pupu logo" width="200px" style="border-radius: 50%" />
   
   # Pupu Manager
 
@@ -22,8 +22,6 @@
   ![GitHub top language](https://img.shields.io/github/languages/top/C0C0B01/PupuManager?style=for-the-badge)
 
   <br>
-
-  <img src="images/screenshot_home.jpg" width="200px">
   
 </div>
 
