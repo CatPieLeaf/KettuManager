@@ -9,15 +9,15 @@ plugins {
 }
 
 android {
-    namespace = "dev.beefers.vendetta.manager"
-    compileSdk = 35
+    namespace = "cocobo1.pupu.manager"
+    compileSdk = 36
 
     defaultConfig {
-        applicationId = "io.github.pyoncord.manager"
+        applicationId = "cocobo1.pupu.manager"
         minSdk = 28
-        targetSdk = 35
-        versionCode = 1009
-        versionName = "1.0.9"
+        targetSdk = 36
+        versionCode = 100
+        versionName = "0.1"
 
         buildConfigField("String", "GIT_BRANCH", "\"${getCurrentBranch()}\"")
         buildConfigField("String", "GIT_COMMIT", "\"${getLatestCommit()}\"")
@@ -44,7 +44,7 @@ android {
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {

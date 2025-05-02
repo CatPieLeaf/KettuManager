@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Bunny Manager"
+rootProject.name = "Pupu Manager"
 include(":app")
