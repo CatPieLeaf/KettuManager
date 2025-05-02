@@ -1,10 +1,11 @@
 package cocobo1.pupu.manager.utils
 
-import android.os.Environment
+import java.io.File
 import cocobo1.pupu.manager.BuildConfig
 
 object Constants {
 
+    val PUPU_DIR: File = File("/PUPU")
     val TEAM_MEMBERS = listOf(
         TeamMember("Kasi", "Developer - Xposed Module", "redstonekasi")
     )

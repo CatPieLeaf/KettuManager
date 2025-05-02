@@ -20,7 +20,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
-import dev.beefers.vendetta.manager.network.dto.Commit
+import cocobo1.pupu.manager.network.dto.Commit
 import kotlinx.datetime.toJavaInstant
 import java.text.SimpleDateFormat
 import java.util.Date

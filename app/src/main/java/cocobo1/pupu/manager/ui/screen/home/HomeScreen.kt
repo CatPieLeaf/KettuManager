@@ -180,17 +180,17 @@ class HomeScreen : Screen {
                         SegmentedButton(
                             icon = Icons.AutoMirrored.Filled.OpenInNew,
                             text = stringResource(R.string.action_launch),
-                            onClick = { viewModel.launchVendetta() }
+                            onClick = { viewModel.launchPupu() }
                         )
                         SegmentedButton(
                             icon = Icons.Filled.Info,
                             text = stringResource(R.string.action_info),
-                            onClick = { viewModel.launchVendettaInfo() }
+                            onClick = { viewModel.launchPupuInfo() }
                         )
                         SegmentedButton(
                             icon = Icons.Filled.Delete,
                             text = stringResource(R.string.action_uninstall),
-                            onClick = { viewModel.uninstallVendetta() }
+                            onClick = { viewModel.uninstallPupu() }
                         )
                     }
                 }

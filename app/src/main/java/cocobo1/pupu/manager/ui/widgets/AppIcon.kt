@@ -9,8 +9,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
-import cocobo1.pupu.vendetta.manager.R
-import cocobo1.pupu.vendetta.manager.utils.DiscordVersion
+import cocobo1.pupu.manager.R
+import cocobo1.pupu.manager.utils.DiscordVersion
 
 @Composable
 fun AppIcon(

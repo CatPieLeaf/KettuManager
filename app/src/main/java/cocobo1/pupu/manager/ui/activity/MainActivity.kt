@@ -54,13 +54,13 @@ class MainActivity : ComponentActivity() {
             HomeScreen()
         }
 
-        setContent {
-            PupuManagerTheme {
-                Navigator(screen) {
-                    SlideTransition(it)
-                }
-            }
-        }
+//        setContent {
+//            PupuManagerTheme {
+//                Navigator(screen) {
+//                    SlideTransition(it)
+//                }
+//            }
+//        }
     }
 
 }
