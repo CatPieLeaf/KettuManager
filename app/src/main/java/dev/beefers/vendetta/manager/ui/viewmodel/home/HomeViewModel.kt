@@ -107,11 +107,11 @@ class HomeViewModel(
 
     private fun checkForUpdate() {
         screenModelScope.launch {
-            release = repo.getLatestRelease("pyoncord/BunnyManager").dataOrNull
+            release = repo.getLatestRelease("C0C0B01/PupuManager").dataOrNull
             release?.let {
                 showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
             }
-            repo.getLatestRelease("pyoncord/BunnyXposed").ifSuccessful {
+            repo.getLatestRelease("C0C0B01/PupuXposed").ifSuccessful {
                 if (prefs.moduleVersion != it.tagName) {
                     prefs.moduleVersion = it.tagName
                     val module = File(cacheDir, "xposed.apk")

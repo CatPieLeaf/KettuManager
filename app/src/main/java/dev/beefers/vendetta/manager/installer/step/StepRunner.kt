@@ -34,7 +34,7 @@ import java.io.File
  *
  * Credit to rushii (github.com/rushiiMachine)
  *
- * @param discordVersion Version of Discord to inject Vendetta into
+ * @param discordVersion Version of Discord to inject Pupu into
  */
 @Stable
 class StepRunner(
@@ -44,14 +44,14 @@ class StepRunner(
     private val preferenceManager: PreferenceManager by inject()
     private val context: Context by inject()
     private val debugInfo = """
-            Bunny Manager v${BuildConfig.VERSION_NAME}
+            Pupu Manager v${BuildConfig.VERSION_NAME}
             Built from commit ${BuildConfig.GIT_COMMIT} on ${BuildConfig.GIT_BRANCH} ${if (BuildConfig.GIT_LOCAL_CHANGES || BuildConfig.GIT_LOCAL_COMMITS) "(Changes Present)" else ""}
             
             Running Android ${Build.VERSION.RELEASE}, API level ${Build.VERSION.SDK_INT}
             Supported ABIs: ${Build.SUPPORTED_ABIS.joinToString()}
             Device: ${Build.MANUFACTURER} - ${Build.MODEL} (${Build.DEVICE})
             ${if(Build.VERSION.SDK_INT > Build.VERSION_CODES.S) "SOC: ${Build.SOC_MANUFACTURER} ${Build.SOC_MODEL}\n" else "\n\n"} 
-            Adding Bunny to Discord v$discordVersion
+            Adding Pupu to Discord v$discordVersion
             
             
         """.trimIndent()
@@ -71,7 +71,7 @@ class StepRunner(
     private val cacheDir =
         context.externalCacheDir
         ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS)
-            .resolve("BunnyManager")
+            .resolve("PupuManager")
             .also { it.mkdirs() }
 
     /**
@@ -175,7 +175,7 @@ class StepRunner(
             // Add delay for human psychology and
             // better group visibility in UI (the active group can change way too fast)
             if (!preferenceManager.isDeveloper && step.durationMs < 1000) {
-                delay(1000L - step.durationMs)
+                delay(100L - step.durationMs)
             }
         }
 

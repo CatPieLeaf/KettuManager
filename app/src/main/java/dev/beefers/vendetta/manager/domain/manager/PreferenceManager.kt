@@ -14,11 +14,11 @@ class PreferenceManager(context: Context) :
     BasePreferenceManager(context.getSharedPreferences("prefs", Context.MODE_PRIVATE)) {
 
     val DEFAULT_MODULE_LOCATION =
-        (context.externalCacheDir ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS).resolve("BunnyManager").also { it.mkdirs() }).resolve("xposed.apk")
+        (context.externalCacheDir ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS).resolve("PupuManager").also { it.mkdirs() }).resolve("xposed.apk")
 
-    var packageName by stringPreference("package_name", "io.github.pyoncord.app")
+    var packageName by stringPreference("package_name", "cocobo1.pupu.app")
 
-    var appName by stringPreference("app_name", "Bunny")
+    var appName by stringPreference("app_name", "Pupu")
 
     var discordVersion by stringPreference("discord_version", "")
 
