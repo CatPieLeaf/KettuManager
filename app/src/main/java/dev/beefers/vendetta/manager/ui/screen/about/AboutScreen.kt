@@ -151,7 +151,7 @@ class AboutScreen : Screen {
                         .fillMaxWidth()
                         .padding(top = 16.dp, bottom = 20.dp)
                 ) {
-                    UserEntry("Maisy", "Creator\nVendetta", "maisymoe", isLarge = true)
+                    UserEntry("Maisy", "Creator\nVendetta", "maisymoe")
                     UserEntry("cocobo1", "Creator\nPupu", "C0C0B01", isLarge = true)
                     UserEntry("Pylix", "Creator\nBunny", "pylixonly")
                 }
