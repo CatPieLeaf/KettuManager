@@ -133,13 +133,13 @@ class AboutScreen : Screen {
                         LinkItem(
                             icon = R.drawable.ic_github,
                             label = R.string.label_github,
-                            link = "https://github.com/C0C0B01/Pupu"
+                            link = "https://github.com/bunny-mod"
                         )
 
                         LinkItem(
                             icon = R.drawable.ic_discord,
                             label = R.string.label_discord,
-                            link = "https://discord.gg"
+                            link = "https://discord.gg/XjYgWXHb9Q"
                         )
                     }
                 }
@@ -151,9 +151,9 @@ class AboutScreen : Screen {
                         .fillMaxWidth()
                         .padding(top = 16.dp, bottom = 20.dp)
                 ) {
-                    UserEntry("Maisy", "Creator\nVendetta", "maisymoe")
-                    UserEntry("cocobo1", "Creator\nPupu", "C0C0B01", isLarge = true)
-                    UserEntry("Pylix", "Creator\nBunny", "Pylixonly")
+                    UserEntry("Fiery", "Lead dev\niOS", "FieryFlames")
+                    UserEntry("Maisy", "Creator\nVendetta", "maisymoe", isLarge = true)
+                    UserEntry("Wing", "Lead dev\nManager", "wingio")
                 }
 
                 Text(

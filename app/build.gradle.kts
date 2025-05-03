@@ -9,24 +9,15 @@ plugins {
 }
 
 android {
-<<<<<<< HEAD
     namespace = "dev.beefers.vendetta.manager"
-=======
-    namespace = "cocobo1.pupu.manager"
->>>>>>> 7792700cf0483ad7d1fe0eb6d89c0b3540b6f205
     compileSdk = 36
 
     defaultConfig {
         applicationId = "cocobo1.pupu.manager"
         minSdk = 28
         targetSdk = 36
-<<<<<<< HEAD
         versionCode = 10
         versionName = "0.0.1"
-=======
-        versionCode = 100
-        versionName = "0.1"
->>>>>>> 7792700cf0483ad7d1fe0eb6d89c0b3540b6f205
 
         buildConfigField("String", "GIT_BRANCH", "\"${getCurrentBranch()}\"")
         buildConfigField("String", "GIT_COMMIT", "\"${getLatestCommit()}\"")
