@@ -16,8 +16,8 @@ android {
         applicationId = "cocobo1.pupu.manager"
         minSdk = 28
         targetSdk = 36
-        versionCode = 10
-        versionName = "0.0.1"
+        versionCode = 20
+        versionName = "0.0.2"
 
         buildConfigField("String", "GIT_BRANCH", "\"${getCurrentBranch()}\"")
         buildConfigField("String", "GIT_COMMIT", "\"${getLatestCommit()}\"")
