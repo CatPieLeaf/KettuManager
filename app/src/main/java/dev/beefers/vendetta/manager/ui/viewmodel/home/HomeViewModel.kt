@@ -31,6 +31,15 @@ import dev.beefers.vendetta.manager.utils.isMiui
 import kotlinx.coroutines.launch
 import java.io.File
 
+// help me
+fun versionStringToCode(version: String): Int {
+    val parts = version.split('.').mapNotNull { it.toIntOrNull() }
+    val major = parts.getOrNull(0) ?: 0
+    val minor = parts.getOrNull(1) ?: 0
+    val patch = parts.getOrNull(2) ?: 0
+    return major * 10000 + minor * 100 + patch
+}
+
 class HomeViewModel(
     private val repo: RestRepository,
     val context: Context,
@@ -52,7 +61,7 @@ class HomeViewModel(
 
     var showUpdateDialog by mutableStateOf(false)
     var isUpdating by mutableStateOf(false)
-    val commits = Pager(PagingConfig(pageSize = 30)) { CommitsPagingSource(repo) }.flow.cachedIn(screenModelScope)
+    val commits = Pager(PagingConfig(pageSize = 20)) { CommitsPagingSource(repo) }.flow.cachedIn(screenModelScope)
 
     init {
         getDiscordVersions()
@@ -109,8 +118,13 @@ class HomeViewModel(
         screenModelScope.launch {
             release = repo.getLatestRelease("C0C0B01/PupuManager").dataOrNull
             release?.let {
-                showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
+                val cleanTag = it.tagName.removePrefix("v")
+                val tagCode = versionStringToCode(cleanTag)
+            showUpdateDialog = tagCode > BuildConfig.VERSION_CODE
             }
+//            release?.let {
+//                showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
+//            }
             repo.getLatestRelease("C0C0B01/PupuXposed").ifSuccessful {
                 if (prefs.moduleVersion != it.tagName) {
                     prefs.moduleVersion = it.tagName
