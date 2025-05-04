@@ -26,7 +26,6 @@ import cafe.adriel.voyager.koin.koinScreenModel
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import dev.beefers.vendetta.manager.R
-import dev.beefers.vendetta.manager.domain.manager.Mirror
 import dev.beefers.vendetta.manager.domain.manager.PreferenceManager
 import dev.beefers.vendetta.manager.ui.components.settings.SettingsButton
 import dev.beefers.vendetta.manager.ui.components.settings.SettingsItemChoice
@@ -65,18 +64,6 @@ class AdvancedSettings: Screen {
                     onPrefChange = {
                         prefs.updateDuration = it
                         viewModel.updateCheckerDuration(it)
-                    }
-                )
-
-                SettingsItemChoice(
-                    label = stringResource(R.string.settings_mirror),
-                    pref = prefs.mirror,
-                    excludedOptions = listOf(Mirror.VENDETTA_ROCKS),
-                    labelFactory = {
-                        it.baseUrl.toUri().authority ?: it.baseUrl
-                    },
-                    onPrefChange = {
-                        prefs.mirror = it
                     }
                 )
 
