@@ -120,7 +120,7 @@ class HomeViewModel(
             release?.let {
                 val cleanTag = it.tagName.removePrefix("v")
                 val tagCode = versionStringToCode(cleanTag)
-            showUpdateDialog = tagCode > BuildConfig.VERSION_CODE
+                showUpdateDialog = tagCode > BuildConfig.VERSION_CODE
             }
 //            release?.let {
 //                showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
