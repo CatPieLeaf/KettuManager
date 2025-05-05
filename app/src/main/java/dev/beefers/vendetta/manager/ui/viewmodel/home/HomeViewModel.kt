@@ -117,14 +117,14 @@ class HomeViewModel(
     private fun checkForUpdate() {
         screenModelScope.launch {
             release = repo.getLatestRelease("C0C0B01/PupuManager").dataOrNull
-            release?.let {
-                val cleanTag = it.tagName.removePrefix("v")
-                val tagCode = versionStringToCode(cleanTag)
-                showUpdateDialog = tagCode > BuildConfig.VERSION_CODE
-            }
 //            release?.let {
-//                showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
+//                val cleanTag = it.tagName.removePrefix("v")
+//                val tagCode = versionStringToCode(cleanTag)
+//                showUpdateDialog = tagCode > BuildConfig.VERSION_CODE
 //            }
+            release?.let {
+                showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
+            }
             repo.getLatestRelease("C0C0B01/PupuXposed").ifSuccessful {
                 if (prefs.moduleVersion != it.tagName) {
                     prefs.moduleVersion = it.tagName
