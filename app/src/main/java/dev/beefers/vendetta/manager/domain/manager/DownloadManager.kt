@@ -23,18 +23,16 @@ class DownloadManager(
 
     suspend fun downloadVendetta(out: File, onProgressUpdate: (Float?) -> Unit) =
         download(
-            "https://github.com/C0C0B01/PupuXposed/releases/latest/download/app-release.apk",
+            "https://github.com/C0C0B01/KettuXposed/releases/latest/download/app-release.apk",
             out,
             onProgressUpdate
         )
 
     suspend fun downloadUpdate(out: File) =
         download(
-            "https://github.com/C0C0B01/PupuManager/releases/latest/download/Manager.apk",
+            "https://github.com/C0C0B01/KettuManager/releases/latest/download/Manager.apk",
             out
-        ) {
-            /* TODO: Update a progress bar in the update dialog */
-        }
+        )
 
     /**
      * Start a cancellable download with the system [DownloadManager].

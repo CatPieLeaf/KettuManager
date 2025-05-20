@@ -9,7 +9,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.beefers.vendetta.manager"
+    namespace = "cocobo1.kettu.manager"
     compileSdk = 36
 
     defaultConfig {
