@@ -50,6 +50,6 @@ Here are a few things you can do:
     
 License
 ---
-PupuManager is licensed under the Open Software License version 3.0
+KettuManager is licensed under the Open Software License version 3.0
 
 [![License: OSL v3](https://img.shields.io/badge/License-OSL%20v3-blue.svg?style=for-the-badge)](https://github.com/C0C0B01/KettuManager/blob/main/LICENSE)
