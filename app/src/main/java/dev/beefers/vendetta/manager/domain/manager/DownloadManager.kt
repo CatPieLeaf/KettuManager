@@ -23,7 +23,7 @@ class DownloadManager(
 
     suspend fun downloadVendetta(out: File, onProgressUpdate: (Float?) -> Unit) =
         download(
-            "https://github.com/C0C0B01/KettuXposed/releases/latest/download/app-release.apk",
+            "https://github.com/C0C0B01/KettuuXposed/releases/latest/download/app-release.apk",
             out,
             onProgressUpdate
         )
