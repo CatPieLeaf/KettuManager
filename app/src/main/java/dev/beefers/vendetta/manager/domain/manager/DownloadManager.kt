@@ -31,6 +31,7 @@ class DownloadManager(
     suspend fun downloadUpdate(out: File) =
         download(
             "https://github.com/C0C0B01/KettuManager/releases/latest/download/Manager.apk",
+            out
         ) {
             // got to add this later
         }
