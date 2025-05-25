@@ -133,7 +133,7 @@ class AboutScreen : Screen {
                         LinkItem(
                             icon = R.drawable.ic_github,
                             label = R.string.label_github,
-                            link = "https://github.com/C0C0B01/Pupu"
+                            link = "https://github.com/C0C0B01/Kettu"
                         )
 
                         LinkItem(
@@ -152,7 +152,7 @@ class AboutScreen : Screen {
                         .padding(top = 16.dp, bottom = 20.dp)
                 ) {
                     UserEntry("Maisy", "Creator\nVendetta", "maisymoe")
-                    UserEntry("cocobo1", "Creator\nPupu", "C0C0B01", isLarge = true)
+                    UserEntry("cocobo1", "Creator\nKettu", "C0C0B01", isLarge = true)
                     UserEntry("Pylix", "Creator\nBunny", "pylixonly")
                 }
 

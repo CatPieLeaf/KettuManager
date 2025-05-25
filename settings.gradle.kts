@@ -6,5 +6,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Pupu Manager"
+rootProject.name = "Kettu Manager"
 include(":app")

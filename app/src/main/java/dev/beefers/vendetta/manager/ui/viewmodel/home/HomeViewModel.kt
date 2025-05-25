@@ -116,7 +116,7 @@ class HomeViewModel(
 
     private fun checkForUpdate() {
         screenModelScope.launch {
-            release = repo.getLatestRelease("C0C0B01/PupuManager").dataOrNull
+            release = repo.getLatestRelease("C0C0B01/KettuManager").dataOrNull
 //            release?.let {
 //                val cleanTag = it.tagName.removePrefix("v")
 //                val tagCode = versionStringToCode(cleanTag)
@@ -125,7 +125,7 @@ class HomeViewModel(
             release?.let {
                 showUpdateDialog = it.tagName.toInt() > BuildConfig.VERSION_CODE
             }
-            repo.getLatestRelease("C0C0B01/PupuXposed").ifSuccessful {
+            repo.getLatestRelease("C0C0B01/KettuXposed").ifSuccessful {
                 if (prefs.moduleVersion != it.tagName) {
                     prefs.moduleVersion = it.tagName
                     val module = File(cacheDir, "xposed.apk")

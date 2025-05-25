@@ -19,7 +19,7 @@ import dev.beefers.vendetta.manager.utils.DiscordVersion
 import org.koin.core.component.inject
 
 /**
- * Replaces the existing app icons with Pupu tinted ones
+ * Replaces the existing app icons with Kettu tinted ones
  */
 class ReplaceIconStep : Step() {
 
@@ -42,7 +42,7 @@ class ReplaceIconStep : Step() {
 
         runner.logger.i("Patching icon assets (squareIcon=$squareIconFile, roundIcon=$roundIconFile)")
 
-        val backgroundColor = arsc.getPackageChunk().addColorResource("pupu_color", Color(0xFF486c8b))
+        val backgroundColor = arsc.getPackageChunk().addColorResource("kettu_color", Color(0xFF486c8b))
 
         val postfix = when (preferences.channel) {
             DiscordVersion.Type.BETA -> "beta"

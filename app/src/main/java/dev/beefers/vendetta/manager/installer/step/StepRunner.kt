@@ -34,7 +34,7 @@ import java.io.File
  *
  * Credit to rushii (github.com/rushiiMachine)
  *
- * @param discordVersion Version of Discord to inject Pupu into
+ * @param discordVersion Version of Discord to inject Kettu into
  */
 @Stable
 class StepRunner(
@@ -44,14 +44,14 @@ class StepRunner(
     private val preferenceManager: PreferenceManager by inject()
     private val context: Context by inject()
     private val debugInfo = """
-            Pupu Manager v${BuildConfig.VERSION_NAME}
+            Kettu Manager v${BuildConfig.VERSION_NAME}
             Built from commit ${BuildConfig.GIT_COMMIT} on ${BuildConfig.GIT_BRANCH} ${if (BuildConfig.GIT_LOCAL_CHANGES || BuildConfig.GIT_LOCAL_COMMITS) "(Changes Present)" else ""}
             
             Running Android ${Build.VERSION.RELEASE}, API level ${Build.VERSION.SDK_INT}
             Supported ABIs: ${Build.SUPPORTED_ABIS.joinToString()}
             Device: ${Build.MANUFACTURER} - ${Build.MODEL} (${Build.DEVICE})
             ${if(Build.VERSION.SDK_INT > Build.VERSION_CODES.S) "SOC: ${Build.SOC_MANUFACTURER} ${Build.SOC_MODEL}\n" else "\n\n"} 
-            Adding Pupu to Discord v$discordVersion
+            Adding Kettu to Discord v$discordVersion
             
             
         """.trimIndent()
