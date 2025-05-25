@@ -67,7 +67,7 @@ class AboutScreen : Screen {
         val scrollBehavior = TopAppBarDefaults.pinnedScrollBehavior()
         val ctx = LocalContext.current
         val bitmap = remember {
-            ctx.getBitmap(R.mipmap.ic_launcher, 60).asImageBitmap()
+            ctx.getBitmap(R.drawable.ic_launcher, 60).asImageBitmap()
         }
         var tapCount by remember {
             mutableIntStateOf(0)
