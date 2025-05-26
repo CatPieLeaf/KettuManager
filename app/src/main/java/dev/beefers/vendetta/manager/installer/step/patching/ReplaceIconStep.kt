@@ -42,7 +42,7 @@ class ReplaceIconStep : Step() {
 
         runner.logger.i("Patching icon assets (squareIcon=$squareIconFile, roundIcon=$roundIconFile)")
 
-        val backgroundColor = arsc.getPackageChunk().addColorResource("kettu_color", Color(0xFF486c8b))
+        val backgroundColor = arsc.getPackageChunk().addColorResource("kettu_color", Color(0xFF000000))
 
         val postfix = when (preferences.channel) {
             DiscordVersion.Type.BETA -> "beta"
