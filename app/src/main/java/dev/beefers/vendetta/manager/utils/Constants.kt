@@ -6,7 +6,7 @@ import dev.beefers.vendetta.manager.BuildConfig
 object Constants {
 
     val TEAM_MEMBERS = listOf(
-        TeamMember("Adv", "Artist - Made the icons work", "aydeevee")
+        TeamMember("Adv", "Artist - Made the icons work", "aydeevee"),
         TeamMember("🍦Vanilla Milk🥛", "Donator - Made the first donation :)", "ChocolateMilk314")
     )
 
