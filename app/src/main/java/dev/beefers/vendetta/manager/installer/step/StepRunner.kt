@@ -71,7 +71,7 @@ class StepRunner(
     private val cacheDir =
         context.externalCacheDir
         ?: File(Environment.getExternalStorageDirectory(), Environment.DIRECTORY_DOWNLOADS)
-            .resolve("PupuManager")
+            .resolve("KettuManager")
             .also { it.mkdirs() }
 
     /**
